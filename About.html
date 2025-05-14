@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="About the Disk Scheduling Algorithms Visualization project">
+    <meta name="keywords" content="disk scheduling, FCFS, SSTF, SCAN, C-SCAN, LOOK, C-LOOK, algorithms, operating systems, about">
+    <meta name="author" content="OS Project">
+    
+    <title>About - Disk Scheduling Algorithms</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3767/3767084.png" type="image/png">
+    
+    <!--CSS and Script linking-->
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+  
+            <div class="navbar-brand">
+              <a href="#"><h1>Disk Scheduling Algorithms</h1></a>
+            </div>
+  
+            <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+  
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+             <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li>
+                <a href="Disk.html">
+                  <i class="fa fa-file-text" aria-hidden="true"></i><br class="hidden-xs"> Wiki</a>
+              </li>
+              <li>
+                <a href="Simulate.html">
+                  <i class="fa fa-area-chart" aria-hidden="true"></i><br class="hidden-xs"> Simulate</a>
+              </li>
+              <li>
+                <a href="About.html">
+                  <i class="fa fa-user-circle" aria-hidden="true"></i><br class="hidden-xs"> About</a>
+              </li>
+            </ul><!-- #nav-list -->
+          </div><!-- .collapse .navbar-collapse -->
+        </div><!-- .container -->
+      </nav><!-- #header-nav -->
+    </header>
+
+    <div class="about-container">
+      <div class="about-header">
+        <h1>About This Project</h1>
+        <hr>
+      </div>
+
+      <div class="about-section">
+        <h2>Project Overview</h2>
+        <p>
+          The Disk Scheduling Algorithms Visualization project is an educational tool designed to help students and professionals understand the various disk scheduling algorithms used in operating systems. This interactive web application allows users to visualize how different algorithms handle disk access requests, providing insights into their efficiency and behavior.
+        </p>
+      </div>
+
+      <div class="about-section">
+        <h2>Features</h2>
+        <div class="features-grid">
+          <div class="feature-item">
+            <i class="fa fa-book feature-icon"></i>
+            <h3>Comprehensive Wiki</h3>
+            <p>Detailed explanations of each disk scheduling algorithm, including their principles, advantages, and limitations.</p>
+          </div>
+          <div class="feature-item">
+            <i class="fa fa-line-chart feature-icon"></i>
+            <h3>Interactive Simulation</h3>
+            <p>Visualize how each algorithm works with custom input parameters and see the results in real-time.</p>
+          </div>
+          <div class="feature-item">
+            <i class="fa fa-bar-chart feature-icon"></i>
+            <h3>Algorithm Comparison</h3>
+            <p>Compare the performance of different algorithms side by side to understand their relative efficiency.</p>
+          </div>
+          <div class="feature-item">
+            <i class="fa fa-play-circle feature-icon"></i>
+            <h3>Step-by-Step Animation</h3>
+            <p>Watch animations that demonstrate how each algorithm processes disk requests sequentially.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-section">
+        <h2>Algorithms Covered</h2>
+        <ul class="algorithms-list">
+          <li><strong>FCFS (First Come First Serve)</strong> - The simplest approach that processes requests in the order they arrive.</li>
+          <li><strong>SSTF (Shortest Seek Time First)</strong> - Selects the request that requires the least disk arm movement from its current position.</li>
+          <li><strong>SCAN</strong> - The disk arm moves in one direction servicing requests until it reaches the end, then reverses direction.</li>
+          <li><strong>C-SCAN (Circular SCAN)</strong> - A modified version of SCAN that provides more uniform service by treating the disk as a circular list.</li>
+          <li><strong>LOOK</strong> - Similar to SCAN but the arm only goes as far as the last request in each direction.</li>
+          <li><strong>C-LOOK (Circular LOOK)</strong> - A modified version of LOOK that provides more uniform service by treating the disk as a circular list.</li>
+        </ul>
+      </div>
+
+      <div class="about-section">
+        <h2>Technical Implementation</h2>
+        <p>
+          This project is built using modern web technologies:
+        </p>
+        <ul class="tech-list">
+          <li><strong>HTML5/CSS3</strong> - For structure and styling</li>
+          <li><strong>JavaScript</strong> - For interactive functionality and algorithm implementation</li>
+          <li><strong>Bootstrap</strong> - For responsive design and layout</li>
+          <li><strong>Plotly.js</strong> - For data visualization and graphing</li>
+          <li><strong>jQuery</strong> - For DOM manipulation and event handling</li>
+        </ul>
+      </div>
+
+      <div class="about-section">
+        <h2>Educational Purpose</h2>
+        <p>
+          This tool is designed primarily for educational purposes to help computer science students, operating system enthusiasts, and professionals visualize and understand disk scheduling concepts. It can be used as a supplementary learning resource in operating systems courses or for self-study.
+        </p>
+      </div>
+
+      <div class="about-section">
+        <h2>Development Team</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="https://via.placeholder.com/150" alt="Team Member" class="team-photo">
+            <h3>John Doe</h3>
+            <p>Lead Developer</p>
+          </div>
+          <div class="team-member">
+            <img src="https://via.placeholder.com/150" alt="Team Member" class="team-photo">
+            <h3>Jane Smith</h3>
+            <p>UI/UX Designer</p>
+          </div>
+          <div class="team-member">
+            <img src="https://via.placeholder.com/150" alt="Team Member" class="team-photo">
+            <h3>Alex Johnson</h3>
+            <p>Algorithm Specialist</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-section">
+        <h2>Contact Information</h2>
+        <p>
+          For questions, feedback, or suggestions regarding this project, please contact us at:
+        </p>
+        <div class="contact-info">
+          <p><i class="fa fa-envelope"></i> Email: contact@example.com</p>
+          <p><i class="fa fa-github"></i> GitHub: <a href="#">github.com/disk-scheduling-project</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Disk Scheduling Algorithms</h3>
+            <p>An educational tool for understanding and visualizing disk scheduling algorithms in operating systems.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="Disk.html">Wiki</a></li>
+              <li><a href="Simulate.html">Simulate</a></li>
+              <li><a href="About.html">About</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: contact@example.com</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa fa-github"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Disk Scheduling Algorithms. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="myscript.js"></script>
+
+  </body>
+</html>
